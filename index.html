@@ -122,6 +122,21 @@
               <span class="text-xs text-gray-400">Sleeps 4</span>
             </label>
 
+            <!-- Option: 1 King Bed -->
+            <label class="bed-option flex items-center gap-3 border border-gray-200 rounded-xl px-3 py-2.5 cursor-pointer" data-id="king">
+              <input type="radio" name="bed" value="king" class="w-4 h-4 shrink-0" />
+              <div class="flex items-center gap-2 flex-1">
+                <!-- King bed icon (wider) -->
+                <svg width="22" height="20" viewBox="0 0 28 20" fill="none" stroke="#374151" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 18v-3a4 4 0 0 1 4-4h18a4 4 0 0 1 4 4v3"/>
+                  <rect x="6" y="9" width="16" height="4" rx="1"/>
+                  <path d="M1 9V5a2 2 0 0 1 2-2h22a2 2 0 0 1 2 2v4"/>
+                </svg>
+                <span class="text-sm font-medium text-gray-800">1 King Bed</span>
+              </div>
+              <span class="text-xs text-gray-400">Sleeps 2</span>
+            </label>
+
           </div>
         </div>
 
@@ -193,7 +208,7 @@
   </div>
 
   <script>
-    const prices = { double: { night: 140, total: 280 }, queen: { night: 155, total: 311 } }
+    const prices = { double: { night: 140, total: 280 }, queen: { night: 155, total: 311 }, king: { night: 170, total: 340 } }
 
     document.querySelectorAll('input[name="bed"]').forEach(radio => {
       radio.addEventListener('change', () => {
